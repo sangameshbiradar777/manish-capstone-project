@@ -21,12 +21,12 @@ function App() {
             <About />
           </Route>
 
-          <Route path="/:category">
-            <Products />
+          <Route exact path="/product/:id">
+            <SingleProduct />
           </Route>
 
-          <Route path="/product/:id">
-            <SingleProduct />
+          <Route path="/:category">
+            <Products />
           </Route>
         </Switch>
       </div>

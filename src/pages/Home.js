@@ -3,6 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { BASE_URL, DUMMY_JSON_BASE_URL } from "../constants";
 import CategorySection from "../components/CategorySection";
+import homeCarouselImages from "../data/carouselItems";
 
 const Home = () => {
   const [carouselItems, setCarouselItems] = useState([]);
@@ -44,7 +45,7 @@ const Home = () => {
   return (
     <div className="container">
       <div className="carousel-container">
-        <Carousel items={carouselItems} />
+        <Carousel images={homeCarouselImages} />
       </div>
 
       <div className="py-4">

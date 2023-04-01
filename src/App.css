@@ -35,6 +35,7 @@
 
 .card--product {
   height: 15rem;
+  color: #282c34;
 }
 
 .card--product .card-title {
@@ -42,11 +43,16 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-transform: capitalize;
 }
 
 .card--product__img-container {
   border-bottom: 1px solid #ccc;
   height: 80%;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 .section-description {
